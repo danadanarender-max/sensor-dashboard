@@ -1,0 +1,8 @@
+[
+  { "id": "S001", "name": "Temperature", "value": 24.5,   "unit": "°C",  "status": "online"  },
+  { "id": "S002", "name": "Humidity",    "value": 62.3,   "unit": "%",   "status": "online"  },
+  { "id": "S003", "name": "Pressure",    "value": 1013.2, "unit": "hPa", "status": "offline" },
+  { "id": "S004", "name": "CO2 Level",   "value": 412,    "unit": "ppm", "status": "online"  },
+  { "id": "S005", "name": "Light",       "value": 843,    "unit": "lux", "status": "online"  },
+  { "id": "S006", "name": "Noise",       "value": 38.2,   "unit": "dB",  "status": "offline" }
+]

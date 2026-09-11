@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sensor Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensorGrid</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>📡 IoT Sensor Monitor</h1>
-      <div class="status-bar">
-        <span class="live-dot"></span>
-        <span>Live Data</span>
-        <span id="countdown">Refreshing in 5s...</span>
-      </div>
-    </div>
+
+<header>
+    <h1>SensorGrid</h1>
+    <p>Simple Sensor Monitoring Dashboard</p>
+</header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#sensors">Sensors</a>
+    <a href="#alerts">Alerts</a>
+</nav>
+
+<main>
+
+<section id="dashboard">
+    <h2>Dashboard</h2>
+
     <div class="cards">
-      <div class="card"><div class="card-num" id="total-count">0</div><div class="card-lbl">Total Sensors</div></div>
-      <div class="card"><div class="card-num green" id="online-count">0</div><div class="card-lbl">Online</div></div>
-      <div class="card"><div class="card-num red" id="offline-count">0</div><div class="card-lbl">Offline</div></div>
-      <div class="card"><div class="card-num blue" id="last-update">--:--</div><div class="card-lbl">Last Update</div></div>
+        <article>
+            <h3>Temperature</h3>
+            <p>27 °C</p>
+        </article>
+
+        <article>
+            <h3>Humidity</h3>
+            <p>60%</p>
+        </article>
+
+        <article>
+            <h3>LED Status</h3>
+            <p id="ledStatus">OFF</p>
+        </article>
     </div>
-    <div class="table-wrap">
-      <table id="sensor-table">
-        <thead>
-          <tr><th>Sensor ID</th><th>Name</th><th>Value</th><th>Unit</th><th>Status</th></tr>
-        </thead>
-        <tbody id="sensor-body"></tbody>
-      </table>
-    </div>
-    <div class="footer">Auto-refreshes every 5 seconds · FSWD IoT Sensor Dashboard · 2026</div>
-  </div>
-  <script src="app.js"></script>
+</section>
+
+<section id="sensors">
+    <h2>Sensors</h2>
+    <p>Temperature Sensor: <strong>Active</strong></p>
+    <p>Humidity Sensor: <strong>Active</strong></p>
+</section>
+
+<section id="alerts">
+    <h2>Alerts</h2>
+    <p>No active alerts.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>SensorGrid Project | ESP32</p>
+</footer>
+
 </body>
 </html>
